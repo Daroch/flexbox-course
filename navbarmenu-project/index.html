@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Menú</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/87a2706bc6.js" crossorigin="anonymous"></script>
+    <link href="/navbarmenu-project/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" class="toogle" id="navhamburger">
+            #<i class="fa-solid fa-bars"></i>
+        </a>
+        <a href="#" class="logo">MyLogo</a>
+        <div class="left">
+            <a href="#" class="link">Link 1</a>
+            <a href="#" class="link">Link 2</a>
+        </div>
+        <div class="right">
+            <a href="#" class="link">Link 3</a>
+        </div>
+    </div>
+    <script>
+        const navhamburger = document.querySelector('#navhamburger');
+        navhamburger.addEventListener('click', (e) => {
+            navhamburger.parentElement.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

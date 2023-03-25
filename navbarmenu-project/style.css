@@ -1,0 +1,79 @@
+body {
+    background-color: lightgoldenrodyellow;
+    margin: 0px;
+}
+ html {
+    font-family: 'Oxygen', sans-serif;
+    font-size:small;
+ }
+.navbar {
+    background-color: #415068;
+}
+.navbar a {
+    text-decoration: none;
+}
+.navbar div {
+    display: none;
+}
+.navbar .logo,
+.navbar .toogle {
+    display: inline-block;
+}
+.navbar .logo {
+    width: 10em;
+    text-align: center;
+    padding: 1em;
+    color: white;
+}
+
+.navbar .toogle {
+    padding: 1em;
+    color: black;
+}
+.navbar .link {
+    display: block;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    background: #223647;
+    color: white;
+}
+.navbar .link:hover,
+.navbar .link:active {
+    background: white;
+    color: #223647;
+}
+@media (min-width: 48em){
+    .navbar {
+        display: flex;
+    }
+    .navbar div {
+        display: flex;
+    }
+    .navbar .left,
+    .navbar .right {
+        display: flex;
+        flex: 1;
+    }
+    .navbar .link {
+        width: auto;
+    }
+    .navbar .right {
+        justify-content: end;
+    }
+    .navbar .toogle {
+        display: none;
+    }
+}
+@media (max-width: 48em){
+    .navbar.active .toogle {
+        background: #223647;
+        color: white;
+    }
+    .navbar .logo {
+        text-align: left;
+    }
+    .navbar.active div {
+        display: block;
+    }
+}
